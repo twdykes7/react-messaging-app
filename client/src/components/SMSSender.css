@@ -1,0 +1,8 @@
+label {
+  padding-right: 4px;
+}
+
+input,
+label {
+  margin: 0.3rem 0;
+}
