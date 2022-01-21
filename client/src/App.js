@@ -1,18 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 import React, { useState } from 'react'
 
-function App() {
-  const [modal, setModal] = useState(false);
+import './App.css';
 
-  const handleClick = () => {
-    setModal(true)
-  }
+function App() {
+  // const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  // const handleClick = () => {
+  //   setModalIsOpen(true)
+  // }
 
   return (
     <div className="App">
       <p>Welcome to a messenger app!</p>
-      <button onClick={handleClick}>Click when ready!</button>
+      {/* <button onClick={handleClick}>Click when ready!</button> */}
+      <button onClick={console.log('Then we are ready!')}>Click when ready!</button>
     </div>
   );
 }
