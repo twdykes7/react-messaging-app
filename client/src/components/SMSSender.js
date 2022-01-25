@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 
 import './SMSSender.css'
 
@@ -10,6 +11,13 @@ const SMSSender = () => {
     event.preventDefault()
     /**Here we will do something on submit and also re render a clean form? */
     console.log(number, message)
+    axios.post('/sms', {number, message})
+      .then((res) => {
+        console.log(res.data)
+      })
+      .catch((error) => {
+        console.log(error.data)
+    })
     setNumber('')
     setMessage('')
   }
